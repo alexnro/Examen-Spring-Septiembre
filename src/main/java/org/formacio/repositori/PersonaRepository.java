@@ -1,6 +1,9 @@
 package org.formacio.repositori;
 
 
-public interface PersonaRepository  {
+import org.formacio.domain.Persona;
+import org.springframework.data.repository.CrudRepository;
+
+public interface PersonaRepository extends CrudRepository<Persona, String> {
 
 }
