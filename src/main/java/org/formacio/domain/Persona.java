@@ -30,7 +30,7 @@ public class Persona {
 	@JoinColumn(name = "cas_propietari")
 	private Set<Casa> propietats = new HashSet<>();
 
-	@OneToMany
+	@OneToMany(fetch = FetchType.EAGER)
 	@JoinColumn(name = "ani_propietari")
 	private Set<Animal> mascotes = new HashSet<>();
 	
